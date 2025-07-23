@@ -11,8 +11,8 @@
 “컴퓨터에 일을 시키기 위해 그 순서를 컴퓨터가 이해할 수 있는 언어로 기술한 것”
 
 파이썬은 이런 특징을 가진 언어입니다.
-High level Language -> 고급 언어
+High level Language -> 고급 언어 "사람이 이해하기 쉬운 문법과 구조를 가진 언어"
 
-Managed Language ->
+Managed Language -> "런타임 환경(Runtime Environment)이 코드를 실행할 때 자동으로 여러 가지를 관리해주는 언어"
 
-Interpret Language -> 
+Interpret Language -> "코드를 한 줄 한 줄 실시간으로 해석하고 실행하는 언어"
