@@ -15,3 +15,7 @@ print("Hello Python", 273, '파이썬 공부는 재미 없다.')
 print("10더하기 20은", 10+20)
 
 print("10곱하기 20은", 20*20)
+
+print("name", "Jeon Ji hoon")
+print("call", 010-2161-9546)
+print("email", "ejjdjee8wj@gmail.com")
