@@ -25,4 +25,12 @@ print("Web Site")
 
 print("Welcome To", end="")
 print("IT NEWS", end= "")
-print("Web Site", end="")
+print("Web Site")
+
+print("Welcome To", end="")
+print("IT NEWS", end= "")
+print("Web Site")
+
+print("Welcome To", end=" 0  ")
+print("IT NEWS", end= "  ^   ")
+print("Web Site")
