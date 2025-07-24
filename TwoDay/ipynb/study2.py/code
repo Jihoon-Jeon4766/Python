@@ -2,3 +2,17 @@ print("Uncle's present")
 
 #print('Uncle's 'present')
 print('Uncle\'s present')
+
+#이스케이프 문자
+
+#1. \n"
+print("다음라인으로")
+print("이동")
+print("다음라인으로\n이동")
+
+#2. \t
+print("Tab은   공백")
+print("Tab은\t공백")
+
+#3. \', \", \\
+print("\',\",\\ 문자 사용하는 방법")
