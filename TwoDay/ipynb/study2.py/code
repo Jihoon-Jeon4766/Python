@@ -34,3 +34,13 @@ print("Web Site")
 print("Welcome To", end=" 0  ")
 print("IT NEWS", end= "  ^   ")
 print("Web Site")
+
+#한 줄 주석
+
+'''
+여
+러
+줄
+주
+석
+'''
