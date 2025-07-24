@@ -16,3 +16,13 @@ print("Tab은\t공백")
 
 #3. \', \", \\
 print("\',\",\\ 문자 사용하는 방법")
+
+# end옵션
+
+print("Welcome To")
+print("IT NEWS")
+print("Web Site")
+
+print("Welcome To")
+print("IT NEWS")
+print("Web Site")
