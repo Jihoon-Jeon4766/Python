@@ -1,0 +1,7 @@
+자료형
+출력(print)
+예제3. 큰 따옴표
+print("Uncle's present")
+
+예제4. 작은 따옴표
+print('Uncle's present')
