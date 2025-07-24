@@ -1,1 +1,7 @@
+# 예제3
+print("Uncle's present")
+
+# 예제4
+print('Uncle's 'present') -> 오류
+
 
