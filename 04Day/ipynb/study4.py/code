@@ -70,3 +70,31 @@ a = 22
 b = 33
 a = a + b
 print(a)
+
+#복합 연산자
+li = 'ab'
+a = 2
+
+a += 3
+print(a)
+
+a -= 4 
+print(a)
+
+a *= 2
+print(a)
+
+a /= 5 
+print(a)
+
+a //= 3 
+print(a)
+
+a **= 4 
+print(a)
+
+li += 'c'
+print(li)
+
+li *= 4 
+print(li)
