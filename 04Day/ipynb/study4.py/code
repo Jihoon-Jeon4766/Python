@@ -35,10 +35,14 @@ for i in range(10,0, -1):
 for i in range(11):
     print(i, end=' ')
 
+print()
+
 # 5-10까지 한줄로 출력
 for i in range(5,11,1):
     print(i, end=' ')
 
+print()
+
 # 5-10 + "안녕" 한줄 출력
 for i in range(5,11,1):
-    print(i,"안녕", end=' ')
+    print(i, end="안녕")
