@@ -46,3 +46,9 @@ print()
 # 5-10 + "안녕" 한줄 출력
 for i in range(5,11,1):
     print(i, end="안녕")
+
+#예제4) for문 사용하여 문자열 아무거나 입력 후 순차적으로 출력
+
+st = input("입력:")
+for st in "string":
+    print(st)
