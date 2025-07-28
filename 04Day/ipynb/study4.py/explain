@@ -119,5 +119,27 @@ print("합 : {}".format(sum))
 결과 : 입력 1 : 1
       입력 2 : 1
       합 : 1
-입력1 이랑 입력2 같은 수이면 합이 같다..
+입력1 이랑 입력2가 같은 수이면 합이 같다..
+
+
+입력 1 < 입력 2 
+입력 1 > 입력 2
+
+num1 = int(input("입력 1:"))
+num2 = int(input("입력 2:"))
+
+sum = 0
+if(num1 < num2):
+    for i in range(num1, num2 + 1):
+        sum += i
+
+    print("합 : {}".format(sum))
+
+elif(num1 > num2):
+    for i in range(num2, num1 + 1):
+        sum += i
+
+    print("합 : {}".format(sum))
+else:
+    print("두 수는 같다.")
 
