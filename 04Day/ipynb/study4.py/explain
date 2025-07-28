@@ -31,3 +31,39 @@ b = 33
 a = a + b
 print(a)
 결과 : 55
+
+#복합 연산자
+li = 'ab'
+a = 2
+
+a += 3 # a = a + 3
+print(a)
+결과 : 5
+
+a -= 4 # a = a - 4
+print(a)
+결과 : 1
+
+a *= 2 # a = a * 2
+print(a)
+결과 : 2
+
+a /= 5 # a = a / 5
+print(a)
+결과 : 0.4
+
+a //= 3 # a = a // 3
+print(a)
+결과 : 0.0
+
+a **= 4 # a = a ** 4
+print(a)
+결과 : 0.0
+
+li += 'c' # li = li + 'c'
+print(li)
+결과 : abc
+
+li *= 4 #li = li * 4
+print(li)
+결과 : abcabcabcabc
