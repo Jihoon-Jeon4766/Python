@@ -115,6 +115,140 @@ print("{:5} {:5}".format(1,1))
 print("{:>5},{:_>20,}".format(1,10000000000))
 print("{:,}".format(10000000000))
 
+# Quiz
+print('\t\t\t파이썬 쇼핑몰')
+print('번호 : 1078718855')
+print('주소 : 서울시 종로구 종로3가')
+print('성명 : 김사장')
+print('전화 : 070-1234-5678')
+print('-'*70)
+print('\t\t품명','\t\t단가','\t\t수량','\t\t금액')
+print('{:>20}{:>10}{:>13}{:>19}'.format('블루투스 이어폰','85,000',1,'85,000'))
+print('{:>23}{:>14}{:>13}{:>19}'.format('USB3.0 8G','8,000',1,'8,000'))
+print('-'*70)
+print('{} {:>64}'.format("소 계",'93,000'))
+print('-'*70)
+print('{} {:>61}'.format("청구금액",'93,000'))
+print('{} {:>61}'.format("받은금액",'100,000'))
+print('{} {:>1}'.format("거스름돈",'7,000'))
+print('-'*70)
+
+# 변수
+# a b c 변수 선언
+# 할당 : 정수, 실수, 문자열 담기
+# 참조 : 출력 print()
+a = 10
+b = 2.5
+c = '문자열'
+print(a,b,c)
+
+# 타입 확인 > Type()
+print(type(a))
+print(type(b))
+print(type(c))
+
+# 키워드 확인
+import keyword
+print(keyword.kwlist)
+# 예약어 변수 선언 불가
+# ['False', 'None', 'True', 'and', 'as', 'assert', 
+# 'async', 'await', 'break', 'class', 'continue', 
+# 'def', 'del', 'elif', 'else', 'except', 'finally', 
+# 'for', 'from', 'global', 'if', 'import', 'in', 'is', 
+# 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 
+# 'return', 'try', 'while', 'with', 'yield']
+
+# 함수명은 변수로 선언 불가
+# Quiz
+# 1. 자신의 이름, 나이, 사는곳을 변수에 담아 출력해보기
+name = '전지훈'
+age = 25
+address = '인천'
+print('이름{} 나이{} 주소{}'.format(name,age,address))
+
+# 2. 자신의 키 몸무게를 변수에 담아 출력하기
+height = 171.8
+weight = 77.4
+print('키{:.1f} 몸무게{:.1f}'.format(height,weight))
+
+# 3. ? + ? = 30 과 같은 결과가 나오도록 변수 설정
+a = 10
+b = 20
+print("{} + {} = {}".format(a,b,a+b))
+
+# 4. 이름과 출생년도 변수에 담아 만나이 출력하기
+name = '전지훈'
+birth = 2001
+year = 2025
+age = year-birth
+print('이름:{}나이:{}'.format('최지환',age))
+
+# 5. 실수를 변수에 담아 실수의 제곱 출력하기
+num = 3.5
+result = 3.5**2
+print('num의 제곱{}'.format(result))
+
+# 6. 정수 3개 변수에 담아 그 합과 평균을 서식문자로 출력
+a = 3
+b = 5
+c = 6
+sum = a+b+c
+avg = sum/3
+print('합:{}평균:{}'.format(sum,avg))
+
+# 입력
+# input
+# a = input('입력: ')
+# print(a)
+
+# Quiz
+# 이름, 나이, 이메일을 입력받고 출력하기
+# name = input("이름: ")
+# age = int(input("나이: "))
+# email = input("이메일: ")
+# print("{}님의 나이는 {}세 이며, 이메일은 {} 입니다.".format(name, age, email))
+
+# Quiz
+# num1 = int(input("첫번째 숫자 입력: "))
+# num2 = int(input("두번째 숫자 입력: "))
+# print('{} + {} = {}'.format(num1, num2, num1+num2))
+# print('{} - {} = {}'.format(num1, num2, num1-num2))
+
+# Quiz
+# mat = int(input("수학 점수 입력: "))
+# eng = int(input("영어 점수 입력: "))
+# kor = int(input("국어 점수 입력: "))
+# soc = int(input("사회 점수 입력: "))
+# print('평균:{}'.format((mat + eng + kor + soc)/4))
+
+# Quiz
+# applePrice = 3000
+# pearPrice = 2000
+
+# print('*** 사과:{:,}원 배:{:,}원 ***'.format(applePrice,pearPrice))
+# apple = 3000
+# pear = 2000
+# appleCount = int(input("사과의 개수:"))
+# pearCount = int(input("배의 개수:"))
+# print("총금액:{}".format((appleCount*apple)+(pearCount*pear)))
+
+# Quiz
+# hour = int(input("시를 입력하세요: "))
+# minute = int(input("분을 입력하세요: "))
+# second = int(input("초를 입력하세요: "))
+
+# time = hour * 3600 + minute * 60 + second
+
+# print("총 {}초 입니다.".format(time))
+
+# Quiz
+print('섭씨온도를 화씨온도로 바꿔드립니다!!')
+celsius = float(input("섭씨 온도를 입력해주세요: "))
+fahrenheit = (celsius * 9/5) + 32
+print("섭씨온도 : {} > 화씨온도 : {:.1f}".format(celsius,fahrenheit))
+print("계속하려면 아무 키나 누르십시오......")
+
+
 
 
 
