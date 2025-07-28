@@ -1,1 +1,16 @@
+# 10줄 출력
+print("출력")
+print("출력")
+print("출력")
+print("출력")
+print("출력")
+print("출력")
+print("출력")
+print("출력")
+print("출력")
+print("출력")
 
+# 1번. for 반복문 사용하여 문자영 100번 출력
+print("출력")
+for i in range(100):
+    print("출력")
