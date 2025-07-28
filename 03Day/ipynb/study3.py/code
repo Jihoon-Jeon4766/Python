@@ -1,1 +1,25 @@
+# Q7
+height = float(input("height : "))
+weight = float(input("weight : "))
+h = height / 100 # 단위변환
+BMI = weight / ( h * h )
+print("BMI: {:.2f} ".format(BMI))
 
+# Q8
+# 세자리수를 입력받고, 각자리수를 출력하는 프로그램
+# 세자리수 : 123
+# 일자리 : 3
+# 십자리 : 23
+# 백자리 : 123
+# hint. 연산자 사용
+Number = int(input("자리수 입력 : "))
+num1 = Number - int ( Number / 10 ) * 10
+num2 = Number - int ( Number / 100 ) * 100
+
+print("일자리 : {} 십자리 : {} 백자리 {} ".format(num1, num2, Number))
+
+# Q9
+num1 = Number % 10
+num2 = Number % 100
+Number = Number % 1000
+print("일자리 : {} 십자리 : {} 백자리 {} ".format(num1, num2, Number))
