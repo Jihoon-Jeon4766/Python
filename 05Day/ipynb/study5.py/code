@@ -1,1 +1,64 @@
+#예제9) while문 break사용
+while True:
+    print('무한반복...')
+    break
+    print('2번째 출력은 나오나요?')
+print('휴....')
 
+#예제10) while문 continue 사용
+
+while True:
+    i = int(input('10보다 작은 정수 입력: '))
+    
+    if i < 10:
+        print('입력하신 값은 10보다 작습니다.')
+        break
+    else:
+        print('말좀 들어요')
+        continue
+
+print('반복종료')
+
+#계절구하기
+while True:
+    i = int(input("계절을 입력(1~3[봄],4~6[여름],7~9[가을],10~12[겨울] : "))
+    if i <4:
+        print('봄')
+        break
+
+    elif 3< i<7:
+        print('여름')
+        break
+    elif 6<i<10:
+        print('가을')
+        break
+    elif 9<i<=12:
+        print('겨울')
+        break
+    else:
+        print('다시 입력')
+        continue
+print('반복종료')
+
+
+=> break 랑 continue 없앤 버전..
+
+while True:
+    i = int(input("계절을 입력(1~3[봄],4~6[여름],7~9[가을],10~12[겨울] : "))
+    if i <4:
+        print('봄')
+        
+
+    elif 3< i<7:
+        print('여름')
+        
+    elif 6<i<10:
+        print('가을')
+        
+    elif 9<i<=12:
+        print('겨울')
+    break
+    else:
+        print('다시 입력')
+        
+print('반복종료')
