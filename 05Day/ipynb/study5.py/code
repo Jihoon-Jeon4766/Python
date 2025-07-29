@@ -62,3 +62,98 @@ while True:
     print('다시 입력')
         
 print('반복종료')
+
+
+
+rice = 100 * 1000  # 100kg -> 100000g
+mouse = 2  
+day = 1
+
+#100kg -> 100000g / 40g -> 2500g
+
+while True:
+
+    rice -= mice * 20  # 하루 동안 쥐가 먹는 양
+    
+    if day % 10 == 0:  # 10일마다 쥐 수가 2배
+        mice *= 2
+
+    if rice <= 0:
+        break
+
+    day += 1
+
+print("{}일 만에 쌀이 모두 없어졌습니다.".format(day))
+print("그때의 쥐 수는 {}마리입니다.".format(mouse))
+
+
+
+
+print("----Menu---")
+
+import time
+import os
+total = 0
+while True:
+
+    print()
+
+    print("1. 콜라 / 300")
+    print("2. 사이다 / 300")
+    print("3. 커피 / 200")
+    print("4. 돈 넣기")
+    print("5. 잔돈 반환")
+    print("6. 종료")
+    print("=======================")
+
+    print("현재금액:", total)
+
+    i = int(input("메뉴를 선택: "))
+    time.sleep(1)
+    os.system('cls')
+    print()
+
+    if i == 1:
+        if total >= 300:
+            print("콜라 맛있게 드세요!")
+            total -= 300
+        else:
+            print("현재금액보다 주문한 음료의 가격이 비싸요")
+            continue
+        
+    elif i == 2:
+        if total >= 300:
+            print("사이다 맛있게 드세요!")
+            total -= 300
+        else:
+            print("현재금액보다 주문한 음료의 가격이 비싸요")
+            continue
+
+    elif i == 3:
+        if total >= 200:
+            print("커피 맛있게 드세요!")
+            total -= 200
+        else:
+            print("현재금액보다 주문한 음료의 가격이 비싸요")
+            continue
+
+    elif i == 4:
+        j = int(input("돈을 넣어주세요: "))
+        total += j
+        continue
+
+    elif i == 5:
+        print("잔돈이 반환됩니다.")
+        print("반환 금액:", total)
+        total = 0
+
+    elif i == 6:
+        print("종료합니다.")
+        break
+
+    else:
+        print("다시 입력해주세요.")
+
+
+
+
