@@ -1,1 +1,13 @@
+while 반복문
 
+break 키워드 : 반복의 종료
+while True:
+  수헹코드
+  break
+수행코드
+
+continue 키워드 : 반복의 처음으로 이동
+while True:
+  수행코드
+  continue
+수행코드
