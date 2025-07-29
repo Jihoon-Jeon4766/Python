@@ -201,7 +201,76 @@ list_3[2] = "Friday"
 
 print(list_3)
 
+#문자열에 접근
 
+list_4 = "7월29일"
+
+print(list_4[0])
+print(list_4[1])
+print(list_4[2])
+print(list_4[3])
+print(list_4[4])
+
+#리스트에 이중으로 접근
+
+list_5 = [2025,7,29,"Tuesday",True]
+#2025
+print(list_5[0])
+
+#Tuesday
+print(list_5[3])
+
+#리스트 안에 리스트 사용
+list_6 = [[1,2,3], ["넷","다섯","여섯"],[7,8,9]]
+print(list_6[1])
+print(list_6[1][1])
+print(list_6[1][1][1])
+
+# list_7 = ["Dog","Cat","Quokka"]
+# print(list_7[3])
+
+#list 연산자
+list_a = ["A","B","C"]
+list_b = ["D","E","F","G","H"]
+
+# + 연산자 -> 연결
+print(list_a + list_b)
+
+# *연산자 -> 반복
+print(list_b * 3)
+
+#len() - 문자열의 길이
+st = "안녕하세요"
+print(len(st))
+
+#len() - 리스트 요소의 개수
+print(len(list_a))
+print(len(list_b))
+
+#리스트 함수
+list_a = ["A","B","C"]
+
+print(" - append 사용해서 뒤에 요소 추가")
+
+#D
+list_a.append("D")
+
+#E
+list_a.append("E")
+
+#확인
+print(list_a)
+
+
+#맨 앞에 "추가!" 추가해보기
+list_a.insert(0,"추가!")
+
+#확인
+print(list_a)
+
+# "F", "G", "H", 한번에 추가
+
+list_a.extend(["F", "G", "H"])
 
 
 
