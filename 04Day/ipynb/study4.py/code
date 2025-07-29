@@ -244,9 +244,13 @@ while i <= 5:
 
 print()
 
+flag = True
+
 i = 1
-while i <= 10: 
+while flag:
     print(i)
+    if i == 10:
+        flag = False
     i += 1 
 
 
