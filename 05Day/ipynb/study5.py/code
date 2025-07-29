@@ -155,5 +155,10 @@ while True:
         print("다시 입력해주세요.")
 
 
+list_1 = [300,30,333,"문자열",True]
+
+print(list_1)
+
+
 
 
