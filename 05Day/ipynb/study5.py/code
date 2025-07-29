@@ -193,6 +193,14 @@ print(list_2[-32])
 print(list_2[31])
 print(list_2[-1])
 
+#요소 변경
+
+list_3 = ["Today", "is", "Tuesday"]
+
+list_3[2] = "Friday"
+
+print(list_3)
+
 
 
 
