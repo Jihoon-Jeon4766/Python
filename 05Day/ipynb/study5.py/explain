@@ -1,1 +1,21 @@
+continue 키워드 사용 X
 
+while True:
+    i = int(input("계절을 입력(1~3[봄],4~6[여름],7~9[가을],10~12[겨울] : "))
+  if(1<= i <= 12):
+    if 1 <= i <4:
+        print('봄')
+        
+    elif 3< i<7:
+        print('여름')
+        
+    elif 6<i<10:
+        print('가을')
+        
+    elif 9<i<=12:
+        print('겨울')
+    break
+  else:
+    print('다시 입력')
+        
+print('반복종료')
