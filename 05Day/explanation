@@ -54,3 +54,13 @@ del 설명 : 특정 요소 삭제
 pop() 설명 : 마지막 인덱스의 값을 반환 후 삭제
 remove(value) 설명 : 특정 값에 해당하는 것을 찾아 삭제
 clear() 설명 : 모든 값을 삭제하여 빈 리스트만 남김
+
+리스트[list]요소 추가
+append (), insert() 사용법
+append() : 맨 뒤
+리스트명.append(요소)
+
+insert() : 중간
+리스트명.insert(위치, 요소)
+
+
