@@ -212,13 +212,53 @@ for i in range(0,5):
         print(i*j, end =" ")
     print()
 
+#1번
+for i in range(0,5): 
+    for j in range(1,6):  
+        print(j+5*i, end="\t")  
+    
+    print()  
 
+#2번
+for i in range(1,22,5): 
+    for j in range(5):  
+        print(i+j, end="\t")  
+    print()  
+
+#3번
 count = 1  
 for i in range(6): 
-    for j in range(5):  
+    for j in range(5): 
         print(count, end="\t")  
         count += 1  
     print()  
+
+
+#0부터 5까지 while문을 이용하여 출력
+i = 0  
+while i <= 5: 
+    print(i)
+    i += 1 
+
+# while문 조건식 True 이용하여 1-10까지 출력하기.
+
+print()
+
+i = 1
+while i <= 10: 
+    print(i)
+    i += 1 
+
+
+
+
+
+    
+
+
+
+    
+
 
 
 
