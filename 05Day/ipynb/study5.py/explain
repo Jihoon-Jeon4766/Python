@@ -30,6 +30,27 @@ print('반복종료')
 그리고 쥐는 총 몇마리인가?
 (쌀 한통 = 1kg) (쌀을 먹은 후 2배 증가하는 조건)
 
+rice = 100 * 1000  # 100kg -> 100000g
+mouse = 2  
+day = 1
+
+#100kg -> 100000g / 40g -> 2500g
+
+while True:
+
+    rice -= mouse * 20  # 하루 동안 쥐가 먹는 양
+    
+    if day % 10 == 0:  # 10일마다 쥐 수가 2배
+        mouse *= 2
+
+    if rice <= 0:
+        break
+
+    day += 1
+
+print("{}일 만에 쌀이 모두 없어졌습니다.".format(day))
+print("그때의 쥐 수는 {}마리입니다.".format(mouse))
+
 
 
 
