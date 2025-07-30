@@ -1,1 +1,38 @@
+#리스트 함수
+list_a = ["A","B","C"]
+
+print(" - append 사용해서 뒤에 요소 추가")
+
+#D
+list_a.append("D")
+
+#E
+list_a.append("E")
+
+#확인
+print(list_a)
+
+
+#맨 앞에 "추가!" 추가해보기
+list_a.insert(0,"추가!")
+
+#확인
+print(list_a)
+
+# "F", "G", "H", 한번에 추가
+
+list_a.extend(["F", "G", "H"]) # -> 리스트로 담기
+list_a.extend("F" "G" "H") 
+
+print("- 리스트의 특정 요소 하나 제거 (키워드)")
+
+# "추가!" 제거
+del list_a[0]
+
+print(list_a)
+
+print("- list의 특정요소 하나 제거(함수)")
+
+# "A" 제거
+list_a.pop(0)
 
