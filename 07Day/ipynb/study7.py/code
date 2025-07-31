@@ -250,3 +250,17 @@ def 전역변수():
 
 전역변수()
 
+#튜플(tuple)
+
+tuple1 = (10,20,30)
+
+print(tuple1[0])
+print(tuple1[1])
+print(tuple1[2])
+
+#요소 변경
+
+# tuple1[0]=1
+
+# print(tuple1) -> 에러 남 타입에러 요소 변경 불가
+
