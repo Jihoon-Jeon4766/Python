@@ -1,1 +1,31 @@
+문제 4.
+input() 함수로 이름과 나이 값을 입력 받을 때 한 번에 입력받아 처리하고 출력하는 코드를 작성하시오. 따로 따로
+
+문제 5.
+input() 함수로 입력 받은 더하기, 빼기, 곱하기, 나누기의 간단한 수식을 처리 할 수 있도록 코드를 작성하시오.
+
+a = input("입력 받은 수식: ")
+if '+' in a:
+      b,c = a.split("+")
+      b = int(b.strip())
+      c = int(c.strip())
+      print("결과: {} + {} = {} ".format(b,c,b+c))
+
+elif '-' in a:
+      b,c = a.split("-")
+      b = int(b.strip())
+      c = int(c.strip())
+      print("결과: {} - {} = {} ".format(b,c,b-c))
+
+elif '*' in a:
+      b,c = a.split("*")
+      b = int(b.strip())
+      c = int(c.strip())
+      print("결과: {} X {} = {} ".format(b,c,b*c))
+
+elif '/' in a:
+      b,c = a.split("/")
+      b = int(b.strip())
+      c = int(c.strip())
+      print("결과: {} / {} = {} ".format(b,c,b/c))
 
