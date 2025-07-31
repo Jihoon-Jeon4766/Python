@@ -29,7 +29,9 @@ print(st.count("dak"))
 #변경 후
 # st = """김개똥 :1999년 03월 24일
 # 홍길동구리 :1999년 04월 02일 
-# 선우선녀 :1999년 05월 14일"""
+# 선우선녀 :1999년 05월 14일
+# 서찬기 - 2002년 03월 15일
+# 안병은 - 2000년 04월 14일"""
 
 # 변경 전
 st = """김개똥 - 2017년 03월 24일
@@ -38,27 +40,14 @@ st = """김개똥 - 2017년 03월 24일
 
 st = st.replace('-', ':')
 
-lines = st.split('\n')
-# 2. 줄 단위로 처리
-new_lines = []
-
-for line in lines:
-    name_date = line.split(':')  # 이름과 날짜 분리
-    name = name_date[0].strip()
-    date = name_date[1].strip()
-
-    # 날짜에서 '년' 위치를 찾아 그 앞까지 삭제하고 '1999년' 삽입
-    year_end_index = date.find('년')  # '2017년' -> '1999년'
-    date = '1999년' + date[year_end_index+1:]
-
-    new_line = name + ' :' + date
-    new_lines.append(new_line)
-
-# 다시 줄바꿈으로 합치기
-st = '\n'.join(new_lines)
+st = st.replace('2017', '1999')
+st = st.replace('2015', '1999')
+st = st.replace('2018', '1999')
 
 # 결과 출력
 print(st)
+
+#2번 
 
 
 
