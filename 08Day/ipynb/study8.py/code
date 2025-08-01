@@ -1,1 +1,114 @@
+# teemo
+
+# - 행동(속도)
+def teemo_run():
+    speed = 10
+
+#대사
+def teemo_say():
+    print("티모 대위 명을 받들겠습니다.")
+
+#스킬
+teemo_skills = {"q":"실명다트","w":"신속한 이동","e": "맹독다트","r":"독버섯"}
+
+
+#lulu
+
+# - 행동(속도)
+def lulu_run():
+    speed = 10
+
+# - 대사
+def lulu_say():
+    print("만나서 반갑습니다.")
+
+#스킬
+lulu_skills = {"q":"글리터랜스","w":"변덕","e": "도와줘, 픽스!","r":"급속한 성장"}
+
+
+
+#tristana
+
+# 행동(속도))
+def tristana_run():
+    speed = 10
+
+# - 대사
+def tristana_say():
+    print("일단 한 번 쏘고 나면 또 쏘고 싶을거에요!")
+
+#스킬
+tristana_skills = {"q":"신속한 화재","w":"로켓 점프","e": "폭발물","r":"버스터샷"}
+
+#class
+
+#step1. 클래스 만들기.
+#첫 글자는 무조건 대문자..
+class Character:
+    def run(self):
+        self.speed = 10
+
+    def say(self):
+        print("티모 대위 명을 받들겠습니다! 헛둘헛둘~")
+
+#step2. 객체 생성
+#객체 = 클래스명()
+teemo = Character()
+
+#step3. 속성(스킬)추가
+teemo.q = "실명다트"
+teemo.w = "신속한 이동"
+teemo.e = "맹독다트"
+teemo.r = "독버섯"
+
+#step4. 객체의 속성과 메서드 사용
+
+#객체.속성
+#객체.메서드()
+
+#객체의 메서드 2개 속성 4개 -> 터미널에 출력
+
+teemo.run()
+print(teemo.speed)
+
+teemo.say()
+
+print("Q스킬:", teemo.q)
+print("W스킬:", teemo.w)
+print("E스킬:", teemo.e)
+print("R스킬:", teemo.r)
+
+#클래스2
+#step1. 클래스 만들기
+class Character:
+    def run(self):
+        self.speed = 10
+
+    def say(self):
+        print("티모 대위 명을 받들겠습니다.")
+
+    q = "실명다트"
+    w = "신속한 이동"
+    e = "맹독다트"
+    r = "독버섯"
+
+#step2. 객체 생성
+teemo = Character()
+
+#step3. 속성 4개 출력
+teemo.run()
+print(teemo.speed)
+
+teemo.say()
+
+print("Q스킬:", teemo.q)
+print("W스킬:", teemo.w)
+print("E스킬:", teemo.e)
+print("R스킬:", teemo.r)
+
+#step4. 객체의 메서드 호출
+#print(teemo.speed) #-> 메서드 내부에 있어서 오류가 남..
+
+teemo.run()
+print(teemo.speed)
 
