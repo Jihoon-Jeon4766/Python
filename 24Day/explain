@@ -49,3 +49,26 @@ evaluate(테스트 데이터, 테스트 데이터의 레이블)
 
 필요정보3
 모델 생성에 필요한 활성함수는 렐루함수를 사용
+
+4. 모델 생성하기
+4-1. 모델 생성 방법(방법2)
+모델 객체 = keras.models.Sequential()
+모델 객체.add(keras.layers.Dense(은닉층 노드의 개수, activation = '활성화 함수명', input_shape = (입력층 행의 개수,)))
+모델 객체.add(keras.layers.Dense(은닉층 노드의 개수, activation = '활성화 함수명', input_shape = (입력층 행의 개수,)))
+....
+모델 객체.add(keras.layers.Dense(은닉층 노드의 개수, activation = '활성화 함수명', input_shape = (입력층 행의 개수,)))
+
+5. 모델 컴파일 하기
+5-1. 컴파일 처리
+
+손실함수
+딥러닝의 예측값과 실제값 사이의 차이를 수치로 나타내는 함수
+mse = 평균 제곱 오차 
+
+최적화 함수
+손실 함수의 값을 최소화하도록 가중치와 바이어스를 수정해 나가는 함수
+adam
+
+평가 지표
+분류 모델이 얼마나 잘 분류했는지를 평가하는 지표
+mae
